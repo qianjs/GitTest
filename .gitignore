@@ -34,11 +34,7 @@ captures/
 
 # Intellij
 *.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/dictionaries
-.idea/libraries
+.idea/
 
 # Keystore files
 *.jks
@@ -59,7 +55,7 @@ freeline_project_description.json
 .classpath
 .project
 .settings      
- ##filter databfile„ÄÅsln file##
+ ##filter databfile°¢sln file##
 *.mdb  
 *.ldb  
 *.sln    
