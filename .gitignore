@@ -65,13 +65,11 @@ freeline_project_description.json
 *.dll  
 *.exe  
 *.o  
-*.so  
 # compression file
 *.7z  
 *.dmg  
 *.gz  
 *.iso  
-*.jar  
 *.rar  
 *.tar  
 *.zip  
