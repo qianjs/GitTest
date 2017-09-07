@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <color name="no_color">#00000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="top_backg">#6b92db</color>
+    <color name="divider">#E5E5E5</color>
+    <color name="shadow">#AAEBEBEB</color>
+    <color name="common_bg">#FAFAFA</color>
+    <color name="content_bg">#F3F3F3</color>
+    <color name="gray">#8c8c8c</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="alpha_gray">#CC646464</color>
+    <color name="theme_gray">#646464</color>
+    <color name="orange">#fbde50</color>
+    <color name="hint_white">#addad5</color>
+    <color name="black_title">#191818</color>
+    <color name="line">#d5d5d5</color>
+    <color name="txt_black">#333333</color>
+    <color name="txt_gray">#7f7d7d</color>
+    <color name="blue_light">#51A2FE</color>
+    <color name="white_dark">#F0EFF4</color>
+    <color name="font_white_one">#FFFFFF</color>
+    <color name="gray_normal">#666667</color>
+    <color name="blue">#0383EE</color>
+</resources>

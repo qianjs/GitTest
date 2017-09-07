@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/top_t"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+    <ListView
+        android:id="@+id/lv_question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp"/>
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:background="@color/holo_red_light"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="确认评价"/>
+</LinearLayout>

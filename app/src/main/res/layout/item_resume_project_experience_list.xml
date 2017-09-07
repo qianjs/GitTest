@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="20dp">
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:text="2016-07 -- 至今"/>
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_below="@id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+        android:text="华为公司"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_right"
+        android:layout_marginRight="20dp"/>
+
+    <!--<View-->
+        <!--android:layout_below="@id/summary_tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:background="@color/white_dark"/>-->
+</RelativeLayout>

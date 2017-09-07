@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:textStyle="bold"
+            android:text="标题"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/black_title"/>
+        <ImageView
+            android:id="@+id/iv_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:src="@mipmap/index_top03"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

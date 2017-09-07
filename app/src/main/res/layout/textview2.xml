@@ -1,0 +1,14 @@
+<TextView
+    android:id="@+id/tv_mytext"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:text="唇形"
+    android:textColor="#8a8a8a"
+    android:background="@drawable/textview_corner2"
+    android:layout_marginLeft="12dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

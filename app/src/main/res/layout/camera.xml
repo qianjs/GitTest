@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.clinical.tongxin.myview.MaskSurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </com.clinical.tongxin.myview.MaskSurfaceView>
+
+	<!-- <ImageView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/img_location1" /> -->
+    
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:scaleType="fitCenter"
+		android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+        <ImageView 
+            android:id="@+id/img_capture"
+			android:layout_alignParentBottom="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/photograph_no"/>
+
+	<RelativeLayout 
+	    android:id="@+id/rl_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentBottom="true">
+	    <ImageView 
+            android:id="@+id/img_remake"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/remake_no"/>
+	    <ImageView 
+            android:id="@+id/img_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/photograph_preservation_no"/>
+	</RelativeLayout>
+	
+</RelativeLayout>

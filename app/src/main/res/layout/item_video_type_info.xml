@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/gray_deep">
+        <TextView
+            android:id="@+id/video_type_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="铁塔配套"/>
+        <TextView
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:text="更多"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/video1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <include layout="@layout/item_video_info"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/video2_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <include layout="@layout/item_video_info"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/video3_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <include layout="@layout/item_video_info"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/video4_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <include layout="@layout/item_video_info"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wdyw"
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题："
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:layout_marginLeft="14dp"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1"
+            android:text="去去去"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:layout_marginLeft="14dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e3"></View>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:padding="10dp"
+        android:text="去adfasdfasdf 去去"
+        android:textColor="#333333"
+        android:textSize="13sp"
+        android:background="#f4f4f4"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_voice"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@mipmap/zjlb02"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="fitXY" />
+        <TextView
+            android:id="@+id/tv_doctorName"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="王医生"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@+id/iv_userhead"/>
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:background="@drawable/chatfrom_bg"
+            android:clickable="true"
+            android:src="@mipmap/chatfrom_voice_playing" />
+
+        <TextView
+            android:id="@+id/tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_voice"
+            android:gravity="center"
+            android:text="3&apos;&apos;" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f2f2f2"></View>
+</LinearLayout>

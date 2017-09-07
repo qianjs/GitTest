@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/top_t"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:text="账户设置"/>
+    <ImageView
+
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:src="@mipmap/wode02"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/img_head" />
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_Recharge"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="用户名："
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/editTxt_Recharage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="请输入用户名"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:paddingLeft="7dp"
+            android:textSize="16sp"
+            android:background="@drawable/down_kuang"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/top_backg"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"/>-->
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/zhanghao" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="#646464"
+            android:text="用户名" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更换"
+            android:textSize="14dp"
+            android:textColor="#FF8B6738"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+
+            android:drawableRight="@mipmap/wo09"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/shadow"/>
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/mima" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="#646464"
+            android:text="登录密码" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textColor="#FF8B6738"
+            android:textSize="14dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:drawableRight="@mipmap/wo09"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/shadow"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_weight="0.54">
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/holo_red_light"
+            android:text="退出账号"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/wode026" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="#646464"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14dp"
+                android:textColor="#646464"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="12dp"
+                android:drawableRight="@mipmap/wo09"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alpha_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/wode026" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="#646464"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14dp"
+                android:textColor="#646464"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="12dp"
+                android:drawableRight="@mipmap/wo09"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alpha_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/wode026" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="#646464"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14dp"
+                android:textColor="#646464"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="12dp"
+                android:drawableRight="@mipmap/wo09"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alpha_gray"/>-->
+    </LinearLayout>
+</LinearLayout>

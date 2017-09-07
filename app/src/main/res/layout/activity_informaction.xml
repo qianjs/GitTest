@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_t" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/btn_gray"
+            android:layout_marginLeft="18dp"/>
+        <TextView
+            android:text="真实姓名："
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/txt_RealName"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/chat_nick_margin_left"
+            android:lines="1"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/btn_corner_red"
+            android:layout_marginLeft="18dp"/>
+        <TextView
+            android:text="身份证号："
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/chat_nick_margin_left"
+            android:lines="1"
+            android:id="@+id/txt_IDNumber" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/btn_gray"
+            android:layout_marginLeft="18dp"/>
+        <TextView
+            android:text="身份证有效期:"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/chat_nick_margin_left"
+            android:lines="1"
+            android:id="@+id/txt_ValidityPeriod" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/btn_gray"
+            android:layout_marginLeft="18dp"/>
+        <TextView
+            android:text="银行名称："
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/chat_nick_margin_left"
+            android:lines="1"
+            android:id="@+id/txt_BankName" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/btn_gray"
+            android:layout_marginLeft="18dp"/>
+        <TextView
+            android:text="银行支行名称："
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/chat_nick_margin_left"
+            android:lines="1"
+            android:id="@+id/txt_BankBranchName" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/btn_gray"
+            android:layout_marginLeft="18dp"/>
+
+        <TextView
+            android:text="银行卡号："
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/chat_nick_margin_left"
+            android:id="@+id/txt_CardNumber" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>

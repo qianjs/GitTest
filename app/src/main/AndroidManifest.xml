@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clinical.tongxin">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 照相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 屏幕旋转权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+    <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/WelcomeTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57303038e0f55a7519000f2c" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="811def171be4646286d20829a4e7971f" />
+        <!-- linchao 测试key android:value="4765edfbb501b430eeeb99f567cc5223"/> -->
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 统计分析 -->
+        <activity
+            android:name=".CountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 资产 -->
+        <activity
+            android:name=".PropertyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 交易详情 -->
+        <activity
+            android:name=".PropertyDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 资产管理 -->
+        <activity
+            android:name=".RechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 充值 -->
+        <activity
+            android:name=".PropertyRechargerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 接包人提现 -->
+        <activity
+            android:name=".PropertyApplyMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 分配预算调整 -->
+        <activity
+            android:name=".AdjustmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 预算查询 -->
+        <activity
+            android:name=".BudgetQueryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 群组成员 -->
+        <activity
+            android:name=".GroupMemberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 可添加成员列表 -->
+        <activity
+            android:name=".FindSignListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 项目经理预算查询 -->
+        <activity
+            android:name=".ManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 服务web页 -->
+        <activity
+            android:name=".WebServiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 预算详情 -->
+        <activity
+            android:name=".ManagerDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 账户设置 -->
+        <activity
+            android:name=".UserSetUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 修改密码 -->
+        <activity
+            android:name=".PasswordReciveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <!-- 修改用户名 -->
+        <activity
+            android:name=".UserMobileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <!-- 我的积分 -->
+        <activity
+            android:name=".MyIntegralActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 工程资质 -->
+        <activity
+            android:name=".QualificationsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 关于我们 -->
+        <activity
+            android:name=".AboutMyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <activity
+            android:name=".CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".DistributionBudgetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <activity
+            android:name=".MessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <activity
+            android:name=".OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".PayTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".SelectCameraDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".ReleaseDemandActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ReleaseQuestionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderOperateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".WebpageOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateUserNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PWDReciveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <activity
+            android:name=".RectHeadImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ProjectDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubmitOrderActivity"
+            android:screenOrientation="portrait" />
+        <!-- 实名认证 -->
+        <activity
+            android:name=".NameAuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 实名验证码 -->
+        <activity
+            android:name=".NameCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".RegisterXYActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <activity
+            android:name=".PaySetUpPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name=".ReasonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <!-- 找回密码 -->
+        <activity
+            android:name=".ForgetPassWordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <!-- 实名认证信息 -->
+        <activity
+            android:name=".RealInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <activity
+            android:name=".RectCameraActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.photoselector.ui.PhotoSelectorActivity" />
+        <activity android:name="com.photoselector.ui.BasePhotoPreviewActivity" />
+        <activity android:name="com.photoselector.ui.PhotoPreviewActivity" />
+
+        <service android:name=".service.PlayService">
+            <intent-filter>
+                <action android:name="com.clinical.medicalbeautymirror.service.play" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.DownloadService">
+            <intent-filter>
+                <action android:name="com.clinical.tongxin.service.download" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="shidaihongtu#woyourenwu" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".TeamManagementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ChooseMemberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".TeamDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".TeamCreateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ChooseAptitudeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ManagerMemberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".TaskActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".TaskDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".EvaluateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".SingleRouteCalculateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".GroupsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".NewGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".GroupDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".myview.ExitGroupDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".BudgetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".TaskDetailsMarkerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme" />
+        <activity
+            android:name=".AuctionInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ArbitrationInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".MarkerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrganizationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskDetailsPublisherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubscribeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubscribeCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/normolTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".SubscribeAptitudeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DoTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EvaluateNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AuthAptitudeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".VideoTypeListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".TypeVideoListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".AllVideoListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".VideoViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TaskDetailsLeaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskDetailsLeasePublisherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DoTaskDetailsLeasePublisherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EvaluateLeaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArbitrationInfoLeaseActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ServiceTextActivity"
+            android:screenOrientation="portrait" ></activity>
+
+        <activity
+            android:name=".ResumeInfoActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeBasicInfoActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OptionFirstLevelActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OptionSecondLevelActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeWorkExperienceListActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeWorkExperienceInfoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeDescriptionActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeProjectExperienceListActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeProjectExperienceInfoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeEducationExperienceListActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeEducationExperienceInfoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeCertificateListActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeCertificateInfoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeSkillListActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeSkillInfoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeCertificateAttachmentListActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeCertificateAttachmentInfoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumePreviewActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

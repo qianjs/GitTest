@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edtTxt_content"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/textview_corner"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:minLines="5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/img_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/jftj" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="添加维权材料"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.clinical.tongxin.myview.MyGridView
+                android:id="@+id/gv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:listSelector="@null"
+                android:numColumns="auto_fit"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:scrollbars="none"
+                android:horizontalSpacing="4dp"
+                android:verticalSpacing="4dp"
+                android:stretchMode="columnWidth">
+
+            </com.clinical.tongxin.myview.MyGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d5d5d5"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#fafafa"></View>
+
+            <RadioGroup
+                android:id="@+id/rg_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_type_shi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/rb_pay"
+                    android:drawablePadding="5dp"
+                    android:padding="10.0dip"
+                    android:text="实名举报"
+                    android:textColor="#ff000000"
+                    android:textSize="18.0sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/rb_pay"
+                    android:drawablePadding="5dp"
+                    android:padding="10.0dip"
+                    android:text="匿名举报"
+                    android:textColor="#ff000000"
+                    android:textSize="18.0sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="姓名：" />
+
+                <EditText
+                    android:id="@+id/edtTxt_name"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_corner"
+                    android:paddingLeft="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="电话：" />
+
+                <EditText
+                    android:id="@+id/edtTxt_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_corner"
+                    android:paddingLeft="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="身份证：" />
+
+                <EditText
+                    android:id="@+id/edtTxt_idnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_corner"
+                    android:paddingLeft="2dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_corner"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

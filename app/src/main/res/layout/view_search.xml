@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/search_box_bg">
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/ic_search"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_search_box"
+            android:textColorHint="#727272"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded"
+            android:imeOptions="actionSearch"/>
+
+        <ImageView
+            android:id="@+id/iv_search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:src="@mipmap/ic_search_clear"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f4f4f5"/>
+
+</LinearLayout>

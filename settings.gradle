@@ -1,0 +1,3 @@
+include ':app', ':ptr-lib', ':social_sdk_library_project', ':easeui',':vlcplayer'
+include ':pickerviewlibrary'
+include ':photoSelector'

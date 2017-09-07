@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:src="@mipmap/img_head"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="12dp"
+                android:text="接受"
+                android:textSize="14sp"
+                android:enabled="true"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_red"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/txt_QName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"/>
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="7dp"
+                android:text="忽略"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:enabled="true"
+                android:background="@drawable/btn_gray"/>/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:id="@+id/txt_typeName"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="12dp"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:visibility="gone"/>
+
+</LinearLayout>

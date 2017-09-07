@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:background="@color/top_backg"        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+            <LinearLayout
+                android:id="@+id/ll_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/top2"/>
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="150dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:ellipsize="start"
+                    android:layout_marginLeft="5dp"/>
+                <ProgressBar
+                    android:id="@+id/pb_refresh_location"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    />
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:src="@mipmap/top3"/>-->
+            </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/textnumber_yuan"
+            android:gravity="center"
+            android:hint="搜索任务"
+            android:layout_marginLeft="12dp"
+            android:paddingLeft="5dp"
+            android:textSize="13sp"
+            android:drawableLeft="@mipmap/suosuo"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_have_task"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="已接任务"
+                android:paddingRight="12dp"
+                android:gravity="center"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="#d5d5d5"/>
+        <TextView
+            android:id="@+id/tv_assign_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="指定任务"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="#d5d5d5"/>
+        <TextView
+            android:id="@+id/tv_public_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="公共任务"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:visibility="gone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d5d5d5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/load_more_list_view_ptr_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <in.srain.cube.views.loadmore.LoadMoreListViewContainer
+                android:id="@+id/load_more_list_view_container1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ListView
+                    android:id="@+id/lv_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    />
+                <LinearLayout
+                    android:id="@+id/empty_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="附近没有任务~"
+                        android:textSize="16sp"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+            </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

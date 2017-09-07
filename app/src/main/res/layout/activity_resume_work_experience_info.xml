@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/item_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/enterprise_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="企业名称"/>
+                <EditText
+                    android:id="@+id/enterprise_edt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:text="华为"/>
+            </RelativeLayout>
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/industry_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="行业名称"/>
+                <TextView
+                    android:id="@+id/industry_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:text="通信"/>
+                <ImageView
+                    android:id="@+id/arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/job_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="职位类别"/>
+                <TextView
+                    android:id="@+id/job_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:text="通信设计"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/job_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/job_name_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="职位名称"/>
+                <EditText
+                    android:id="@+id/job_name_edt"
+                    android:layout_toRightOf="@id/job_name_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:maxLength="15"
+                    android:text="通信设计"/>
+            </RelativeLayout>
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/work_start_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="开始时间"/>
+                <TextView
+                    android:id="@+id/work_start_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:text="2008-11-11"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/work_end_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="结束时间"/>
+                <TextView
+                    android:id="@+id/work_end_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:text="2008-11-11"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/salary_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="职位月薪"/>
+                <TextView
+                    android:id="@+id/salary_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:text="5000-10000"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:id="@+id/description_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/description_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="工作描述"/>
+                <TextView
+                    android:id="@+id/description_tv"
+                    android:layout_toRightOf="@id/description_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="13123456789"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

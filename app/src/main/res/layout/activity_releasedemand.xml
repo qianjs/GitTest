@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_above="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <include layout="@layout/top" android:id="@+id/in_top"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/item_top_info"></include>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d5d5d5"></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#f2f2f2"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/white"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布需求"
+                    android:textSize="16sp"
+                    android:textColor="#333333" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择项目:"
+                    android:textSize="15sp"
+                    android:textColor="#333333"
+                    />
+                <TextView
+                    android:id="@+id/tv_selectProject"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="选择项目"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/textview_corner2"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+                <com.wefika.flowlayout.FlowLayout
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/flowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top">
+
+
+                </com.wefika.flowlayout.FlowLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="期望城市:"
+                    android:textSize="15sp"
+                    android:textColor="#333333"
+                    />
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="无"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/textview_corner2"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edtTxt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:paddingLeft="4dp"
+                android:background="@drawable/textview_squarely"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:minLines="5" />
+            <RelativeLayout
+                android:id="@+id/rl_selectdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:hint="选择有效日期"
+                    android:paddingLeft="4dp"
+                    android:background="@drawable/textview_squarely"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/wo09"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/img_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/jftj" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="添加照片"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.clinical.tongxin.myview.MyGridView
+                android:id="@+id/gv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="4dp"
+                android:listSelector="@null"
+                android:numColumns="auto_fit"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="4dp">
+
+            </com.clinical.tongxin.myview.MyGridView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bggradient_blue"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <View
+        android:id="@+id/vMasker"
+        android:visibility="gone"
+        android:background="#e0000000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</RelativeLayout>

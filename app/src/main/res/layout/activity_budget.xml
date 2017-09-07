@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/top_t"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qdys01"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/tv_ing_desc"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:text="进行中："
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_ing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/tv_ing_desc"
+            android:background="@null"
+            android:textColor="#85000000"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:paddingRight="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qdys02"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/tv_use_desc"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:text="已使用："
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/tv_use_desc"
+            android:background="@null"
+            android:textColor="#85000000"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:paddingRight="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qdys01"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/tv_unuse_desc"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_centerVertical="true"
+            android:text="未使用："
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_unuse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/tv_unuse_desc"
+            android:background="@null"
+            android:textColor="#85000000"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

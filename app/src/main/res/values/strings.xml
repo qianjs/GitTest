@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">我有任务</string>
+    <string name="no_data">没有找到符合条件的分类</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="cube_views_load_more_loading">加载中...</string>
+    <string name="cube_views_load_more_click_to_load_more">点击加载更多</string>
+    <string name="cube_views_load_more_loaded_no_more">全部数据加载完毕</string>
+    <string name="cube_views_load_more_loaded_empty">数据为空</string>
+    <string name="cube_views_load_more_error">加载失败,点击重试</string>
+    <string name="select_city">选择城市</string>
+    <string name="hot_city">热门城市</string>
+    <string name="located_city">定位城市</string>
+    <string name="hint_search_box">请输入城市名或拼音</string>
+    <string name="nothing_found">没有搜索结果~</string>
+    <string name="locating">正在定位…</string>
+    <string name="located_failed">定位失败</string>
+    <string name="login_txt">登录</string>
+    <string name="login_hit">输入您的手机号</string>
+    <string name="login_pwd_hit">登录密码</string>
+    <string name="login_forgetpwd">找回密码？</string>
+    <string name="txt_register">如果您是新的用户？注册</string>
+    <string name="rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#064;&#038;</string>
+    <string name="rule_ID">0123456789Xx</string>
+
+    <string name="team_management">团队管理</string>
+    <string name="team_search">搜索团队</string>
+</resources>

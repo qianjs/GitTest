@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/top_t"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="43dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_name_desc"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="团队名称："
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/tv_name_desc"
+                    android:background="@null"
+                    android:textColor="#85000000"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#85000000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_team_manager"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_manager_desc"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="项目经理："
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_manager_desc"
+                    android:textColor="#85000000"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#85000000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></ImageView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_team_aptitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="43dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_aptitude_desc"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="资        质："
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_aptitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_aptitude_desc"
+                    android:textColor="#85000000"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#85000000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></ImageView>
+
+            <TextView
+                android:id="@+id/tv_team_create"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@color/holo_red_light"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="创建团队"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/top_t"/>
+    <ListView
+        android:id="@+id/lv_auction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:divider="#85000000"
+        android:dividerHeight="1px"
+        />
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/gray"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="结束竞价"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/holo_red_light"
+
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="继续竞价"/>
+    </LinearLayout>
+</LinearLayout>

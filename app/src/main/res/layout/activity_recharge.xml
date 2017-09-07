@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/top_t"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@mipmap/wdzc01"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账户资产"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txt_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总资产：259.0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="7dp"
+        android:gravity="center_vertical" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_Recharge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:text="充值"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/tv_right"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/shadow"/>
+    <TextView
+        android:id="@+id/txt_Withdrawals"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:text="提现"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/tv_right"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/shadow"/>
+
+
+</LinearLayout>

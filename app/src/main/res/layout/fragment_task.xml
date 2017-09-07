@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈尔滨"
+            android:textSize="14sp"
+            android:drawableRight="@mipmap/index_top01"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:textColor="@color/holo_red_light"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:textStyle="bold"
+            android:text="标题"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/black_title"/>
+        <ImageView
+            android:id="@+id/iv_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:src="@mipmap/index_top03"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+
+    <include layout="@layout/task_classification1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/load_more_list_view_ptr_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <in.srain.cube.views.loadmore.LoadMoreListViewContainer
+                android:id="@+id/load_more_list_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ListView
+                    android:id="@+id/lv_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"/>
+                <include layout="@layout/view_no_search_result" />
+            </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

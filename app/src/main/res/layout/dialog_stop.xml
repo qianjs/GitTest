@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="终止"
+        android:gravity="center"
+        android:background="#15000000"/>
+    <LinearLayout
+        android:id="@+id/ll_proportion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_proportion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="false"
+            android:background="@drawable/rb_pay"
+            android:button="@null" />
+        <TextView
+            android:id="@+id/tv_proportion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333335"
+            android:text="按比例验收"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_values"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="#333335"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_integration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/cb_integration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="false"
+                android:background="@drawable/rb_pay"
+                android:button="@null" />
+            <TextView
+                android:id="@+id/tv_integration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#333335"
+                android:text="积分回馈"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_integration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#333335"
+            android:inputType="number"
+            android:hint="请输入积分"
+            android:textSize="14sp"
+            android:enabled="false"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="false"
+            android:background="@drawable/rb_pay"
+            android:button="@null" />
+        <TextView
+            android:id="@+id/tv_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333335"
+            android:text="好评"
+            android:textSize="14sp"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_notify"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/holo_red_light"
+        android:text="任务已全部验收，不能进行按比例验收操作"/>
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_red_light"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#30000000"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

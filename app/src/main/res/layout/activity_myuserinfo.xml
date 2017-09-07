@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="@mipmap/wd"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:src="@mipmap/wo"
+            android:id="@+id/img_head" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="7dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:minEms="4"
+            android:gravity="right"
+            android:textSize="13sp"
+
+            />
+        <TextView
+            android:id="@+id/txt_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/wo09"
+            android:paddingRight="12dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+    <LinearLayout
+        android:id="@+id/ll_pwd"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:minEms="4"
+            android:gravity="right"
+            android:textSize="13sp"
+
+            />
+        <TextView
+            android:id="@+id/txt_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/wo09"
+            android:paddingRight="12dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_Logoff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="退出系统"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:background="#FF3ADAD2"/>
+</RelativeLayout>
+</LinearLayout>

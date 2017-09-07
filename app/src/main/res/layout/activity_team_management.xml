@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/top_t"/>
+    <include layout="@layout/view_search"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/load_more_list_view_ptr_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <in.srain.cube.views.loadmore.LoadMoreListViewContainer
+                android:id="@+id/load_more_list_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ListView
+                    android:id="@+id/lv_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="#85000000"
+                    android:dividerHeight="1px"
+                    />
+                <include layout="@layout/view_no_search_result" />
+            </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

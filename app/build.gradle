@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+    signingConfigs {
+        release {
+            keyAlias 'clinical.tongxin'
+            keyPassword 'tongxin'
+            storePassword 'tongxin'
+            storeFile file('tongxin.jks')
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.clinical.tongxin"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 15
+        versionName "1.15"
+        multiDexEnabled true
+        configurations {
+            all*.exclude group: 'com.android.support', module: 'support-v4'
+            all*.exclude group: 'com.android.support', module: 'support-annotations'
+            all*.exclude group: 'com.android.support', module: 'support-compat'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+
+    }
+
+    lintOptions {
+        disable "ResourceType"
+    }
+    /* task clean(type: Delete) {
+        delete rootProject.buildDir
+    }*/
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.android.support:appcompat-v7:21.0.3') {
+        exclude module: 'support-v4'
+    }
+    compile project(':vlcplayer')
+    compile project(':ptr-lib')
+    compile files('libs/gson-2.2.1.jar')
+    compile project(':social_sdk_library_project')
+    compile project(':pickerviewlibrary')
+    compile project(':easeui')
+    compile project(':photoSelector')
+    compile files('libs/hellocharts-library-1.5.8.jar')
+    compile files('libs/AMap3DMap_4.1.2_AMapNavi_1.9.4_AMapLocation_3.1.0_20161201.jar')
+    compile 'org.xutils:xutils:3.3.4'
+    compile 'com.wefika:flowlayout:0.4.1'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.android.support:support-v4:23.4.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+
+}
